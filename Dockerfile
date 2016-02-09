@@ -19,4 +19,4 @@ RUN sed -i -e"s/^Allow /#Allow /" /etc/tinyproxy.conf
 
 USER nobody
 EXPOSE 8888
-ENTRYPOINT ["/usr/sbin/tinyproxy", "-d"]
+CMD ["/usr/sbin/tinyproxy", "-d"]
